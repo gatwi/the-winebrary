@@ -1,11 +1,11 @@
 import React from "react";
 
-function Items(){
+ function CocktailsCard(){
     return(
         <div>
-            
+            cocktails
         </div>
     )
 }
 
-export default Items;
+export default CocktailsCard;
