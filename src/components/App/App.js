@@ -4,61 +4,42 @@ import Navbar from "../NavBar/Navbar";
 import Home from "../Home/Home";
 import Search from "../Search/Search";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import "./../../App.css";
+import SearchIcon from "./../../search.svg";
+import BooksCard from "./../Items/BooksCard";
 
-
-
-const API_URL = "www.thecocktaildb.com/api/json/v1/1/search.php";
+const API_URL = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail";
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
-  const [cocktails, setCocktails] = useState([]);
+  
 
-  useEffect(() => {
-    searchCocktails("");
+  useEffect (() => {
+    fetch(API_URL)
+    .then(response => response.json())
+    .then(data => console.log(data))
   }, []);
 
-  const searchCocktails = async (name) => {
-    const response = await fetch(`${API_URL}&s={name}`);
-    const data = await response.json();
 
-    
-  };
 
-  useEffect(() => {
-    searchCocktails("");
-  }, []);
+  
 
   return (
     <div className="app">
       <h1>The Winebrary</h1>
-      <Router>
-        <div>
-         <Navbar/>
-        </div>
-       <Routes>
-        <Route exact path="/" element={<Home/>}></Route>
-        <Route exact path="/search" element={<Search/>}></Route>
-       </Routes>
-     </Router>
- 
+
       <div className="search">
         <input
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          placeholder="Search for a book and a drink"
+          placeholder="Keep searching..."
         />
-        {/* <img
+      <img
           src={SearchIcon}
           alt="search"
-          onClick={() => searchCocktails(searchTerm)}
-        /> */}
-      </div>
-
-        <div className="container">
-          {cocktails.map((cocktails) => (
-            <CocktailsCard cocktails={cocktails} />
-          ))}
-        </div>
+          onClick={() => (searchTerm) }
+        />
+      </div>  
     </div>
   );
 };

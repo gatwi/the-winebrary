@@ -1,14 +1,14 @@
 import React from "react";
 
- const CocktailsCard = ({ cocktails: { drinks, idDrink, strDrink, strDrinkThumb} }) => {
+ const CocktailsCard = () => {
     return (
-        <div className="cocktails" key={idDrink}>
+        <div className="cocktails" key="">
             <div>
-                <img src={strDrinkThumb} alt={drinks} />
+                <img src="" alt="" />
             </div>
             <div>
-                <span>{idDrink}</span>
-                <h3>{strDrink}</h3>
+                <span>""</span>
+                <h3>""</h3>
             </div>
         </div>
     )
