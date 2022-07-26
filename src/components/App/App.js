@@ -44,8 +44,8 @@ function App() {
       </div>
 
       <div className="container">
-        {cocktail.map((cocktail) => (
-          <CocktailsCard cocktail={cocktail} />
+        {cocktails.map((cocktail) => (
+          <CocktailsCard cocktail={cocktails[0]} />
         ))}
       </div>
 
