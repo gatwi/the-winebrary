@@ -21,7 +21,7 @@ function App() {
       "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/qyyvtu1468878544.jpg",
       "idDrink": "14029"
   }
-  
+ 
  
 
   useEffect (() => {

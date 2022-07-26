@@ -1,5 +1,6 @@
 import React from "react";
 
+
  const CocktailsCard = ({ cocktail1 }) => {
     return (
         <div className="cocktail">
