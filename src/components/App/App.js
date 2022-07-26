@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import CocktailsCard from "../Items/CocktailsCard";
 import Navbar from "../NavBar/Navbar";
 import Home from "../Home/Home";
@@ -10,8 +10,11 @@ import BooksCard from "./../Items/BooksCard";
 
 const API_URL = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail";
 
+
+
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
+  const [cocktails, setCocktails] = useState([]);
 
   const cocktail1 = {
       "strDrink": "57 Chevy with a White License Plate",
@@ -19,11 +22,12 @@ function App() {
       "idDrink": "14029"
   }
   
+ 
 
   useEffect (() => {
     fetch(API_URL)
     .then(response => response.json())
-    .then(data => console.log(data))
+    .then(response => console.log(response))
   }, []);
 
 
@@ -43,9 +47,9 @@ function App() {
         <img
           src={SearchIcon}
           alt="search"
-          onClick={() => (searchTerm) }
+          onClick={() => {}}
         />
-      </div>  
+      </div> 
 
       <div className="container">
         <CocktailsCard cocktail1={cocktail1} />
