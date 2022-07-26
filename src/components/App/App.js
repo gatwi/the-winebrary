@@ -14,12 +14,12 @@ const API_URL = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cockta
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
-  const [cocktails, setCocktails] = useState([]);
+ 
 
   useEffect (() => {
     fetch(API_URL)
-    .then(response => response.json());
-    .then(data => setCocktails(data));
+    .then(response => response.json())
+    .then(response => console.log(response))
   }, []);
 
 
@@ -36,23 +36,11 @@ function App() {
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Keep searching..."
         />
-      <img
+        <img
           src={SearchIcon}
           alt="search"
-          onClick={() => (searchTerm) }
+          onClick={() => {}}
         />
-      </div>
-
-      <div className="container">
-        {cocktails.map((cocktail) => (
-          <CocktailsCard cocktail={cocktails[0]} />
-        ))}
-      </div>
-
-      <div className="container">
-        <div className="Books">
-
-        </div>
       </div>
     </div>
   );
