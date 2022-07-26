@@ -14,8 +14,11 @@ const API_URL = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cockta
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
- 
+  
 
+
+
+ 
   useEffect (() => {
     fetch(API_URL)
     .then(response => response.json())
@@ -23,12 +26,10 @@ function App() {
   }, []);
 
 
-
-  
-
   return (
     <div className="app">
       <h1>The Winebrary</h1>
+      
 
       <div className="search">
         <input
@@ -42,6 +43,7 @@ function App() {
           onClick={() => {}}
         />
       </div>
+
     </div>
   );
 };

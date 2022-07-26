@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function BooksCard(){
+    const [selectedCategory, setSelectedCategory] = useState("All");
+    const [items, setItems] = useState([]);
+
+    useEffect(() => {
+        fetch("http://localhost:3000/books")
+        .then((r) => r.json())
+        .then((items) => console.log(items));
+    }, []);
+
+    
     return(
         <div className="books">
             <img src="..." className="card-img-top" alt="..."/>
