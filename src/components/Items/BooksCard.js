@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function BooksCard(){
     return(
-        <div className="card">
+        <div className="books">
             <img src="..." className="card-img-top" alt="..."/>
             <div className="card-body">
               <h5 className="card-title">Card title</h5>

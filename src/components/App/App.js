@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import CocktailsCard from "../Items/CocktailsCard";
 import Navbar from "../NavBar/Navbar";
 import Home from "../Home/Home";
@@ -10,14 +10,16 @@ import BooksCard from "./../Items/BooksCard";
 
 const API_URL = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail";
 
+
+
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
-  
+  const [cocktails, setCocktails] = useState([]);
 
   useEffect (() => {
     fetch(API_URL)
-    .then(response => response.json())
-    .then(data => console.log(data))
+    .then(response => response.json());
+    .then(data => setCocktails(data));
   }, []);
 
 
@@ -39,7 +41,19 @@ function App() {
           alt="search"
           onClick={() => (searchTerm) }
         />
-      </div>  
+      </div>
+
+      <div className="container">
+        {cocktail.map((cocktail) => (
+          <CocktailsCard cocktail={cocktail} />
+        ))}
+      </div>
+
+      <div className="container">
+        <div className="Books">
+
+        </div>
+      </div>
     </div>
   );
 };
