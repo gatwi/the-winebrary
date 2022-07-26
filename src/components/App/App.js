@@ -12,6 +12,12 @@ const API_URL = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cockta
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
+
+  const cocktail1 = {
+      "strDrink": "57 Chevy with a White License Plate",
+      "strDrinkThumb": "https://www.thecocktaildb.com/images/media/drink/qyyvtu1468878544.jpg",
+      "idDrink": "14029"
+  }
   
 
   useEffect (() => {
@@ -26,7 +32,7 @@ function App() {
 
   return (
     <div className="app">
-      <h1>The Winebrary</h1>
+      <h1>The Winebrary...</h1>
 
       <div className="search">
         <input
@@ -34,12 +40,16 @@ function App() {
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Keep searching..."
         />
-      <img
+        <img
           src={SearchIcon}
           alt="search"
           onClick={() => (searchTerm) }
         />
       </div>  
+
+      <div className="container">
+        <CocktailsCard cocktail1={cocktail1} />
+      </div>
     </div>
   );
 };
