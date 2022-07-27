@@ -1,13 +1,11 @@
 import React from "react";
-import BooksCard from "../Items/BooksCard";
-import CocktailsCard from "../Items/CocktailsCard";
+import BooksCard from "../Catalogue/BooksCard";
+import CocktailsCard from "../Catalogue/CocktailsCard";
 
  function Home(){
     return(
         <div>
             Home
-            <BooksCard/>
-            <CocktailsCard/>
         </div>
     )
 }

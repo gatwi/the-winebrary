@@ -1,15 +1,11 @@
 import React from "react";
 
-function Search(){
+function Catalogue(){
     return(
         <div>
-            Search
+            Catalogue
         </div>
     )
 }
 
-export default Search;
-
-
-
-
+export default Catalogue;
