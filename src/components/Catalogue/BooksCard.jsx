@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-function BooksCard({bookId, bookName, bookAuthor, bookUrl}){
-    const [selectedCategory, setSelectedCategory] = useState("All");
+function BooksCard({bookId, bookTitle, bookAuthor, bookUrl}){
     const [books, setBooks] = useState([]);
 
     useEffect(() => {
@@ -16,7 +15,7 @@ function BooksCard({bookId, bookName, bookAuthor, bookUrl}){
         <div className="card" style={{width: 18 + 'rem'}}>
             <img src={bookUrl} className="card-img-top" alt={bookAuthor}/>
             <div className="card-body">
-              <h5 className="card-title">{bookName}</h5>
+              <h5 className="card-title">{bookTitle}</h5>
               <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <Link to={`/book/${bookId}`} className="btn btn-primary">Grab a book</Link>
             </div>

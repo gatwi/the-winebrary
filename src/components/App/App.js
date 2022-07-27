@@ -35,25 +35,27 @@ function App() {
       <div className="app">
         <h1>The Winebrary</h1>
       </div>
-      <div className="search">
-        <input 
-         value={searchTerm} 
-         onChange={(e) => setSearchTerm(e.target.value)} 
-         placeholder="Keep searching..."
-        />
-        <img
-         src={SearchIcon}
-         alt="search"
-         onClick={() => {}}
-        />
+      <div className="container">
+        <div className="search">
+           <input 
+           value={searchTerm} 
+           onChange={(e) => setSearchTerm(e.target.value)} 
+           placeholder="Keep searching..."
+         />
+         <img
+           src={SearchIcon}
+           alt="search"
+           onClick={() => {}}
+         />
+        </div>
       </div>
 
-      <div>
-       <BooksCard bookName="" bookId="" bookAuthor="" bookUrl="" />
+      <div className="container-fluid">
+       <BooksCard bookTitle="The Book Thief" bookId="1" bookAuthor="Markus Zukas" bookUrl="https://images-na.ssl-images-amazon.com/images/I/91pZEozf9qL.jpg" />
       </div>
 
-      <div>
-        <CocktailsCard idDrink="" strDrink="" strDrinkThumb="" />
+      <div className="container-fluid">
+        <CocktailsCard idDrink="14272" strDrink="Addison Special" strDrinkThumb="https:\/\/www.thecocktaildb.com\/images\/media\/drink\/4vo5651493068493.jpg" />
       </div>
     </Router>
   )

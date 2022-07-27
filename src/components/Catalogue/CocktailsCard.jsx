@@ -1,12 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function CocktailsCard({idDrink, strDrink, strDrinkThumb}) {
+    const [cocktails, setCocktails] = useState([]);
+
 
     useEffect(() => {
         fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail")
         .then((r) => r.json())
-        .then((books) => console.log(books));
+        .then((cocktails) => console.log(cocktails));
     }, []);
 
     return(
