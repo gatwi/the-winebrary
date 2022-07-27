@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function CocktailsCard({idDrink, strDrink, strDrinkThumb}) {
+
+    useEffect(() => {
+        fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail")
+        .then((r) => r.json())
+        .then((books) => console.log(books));
+    }, []);
+
     return(
         <div className="card" style={{width: 18 + 'rem'}}>
             <img src={strDrinkThumb} className="card-img-top" alt={idDrink}/>

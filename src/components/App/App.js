@@ -9,9 +9,6 @@ import "./../../App.css";
 import SearchIcon from "./../../search.svg";
 import BooksCard from "../Catalogue/BooksCard";
 
-// const API_URL = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail";
-
-
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
