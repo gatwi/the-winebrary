@@ -10,7 +10,11 @@ import { Link } from "react-router-dom";
                      <Link className="nav-link" to="/">HOME</Link>
                     </li>
                     <li className="nav-item dropdown">
-                        <Link className="nav-link dropdown-toggle" to="/">CATALOGUE</Link>
+                        <Link className="nav-link dropdown-toggle" to="/CATALOGUE">CATALOGUE</Link>
+                        {/* <ul className="dropdown-menu">
+                            <li><Link className="dropdown-item">Books</Link></li>
+                            <li><Link className="dropdown-item">Cocktails</Link></li>
+                        </ul> */}
                     </li>
                 </ul>
             </div>

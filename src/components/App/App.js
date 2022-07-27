@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import CocktailsCard from "../Catalogue/CocktailsCard";
 import Navbar from "../NavBar/Navbar";
 import Home from "../Home/Home";
+import Catalogue from "../Catalogue/Catalogue";
 import Search from "../Search/Search";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import "./../../App.css";
@@ -31,8 +32,24 @@ function App() {
 
       <Routes>
         <Route exact path="/" element={<Home/>}></Route>
-        <Route exact path="/" element={<Catalogue/>}></Route>
+        <Route exact path="/CATALOGUE" element={<Catalogue/>}></Route>
       </Routes>
+
+      <div className="app">
+        <h1>The Winebrary</h1>
+      </div>
+      <div className="search">
+        <input 
+         value={searchTerm} 
+         onChange={(e) => setSearchTerm(e.target.value)} 
+         placeholder="Keep searching..."
+        />
+        <img
+         src={SearchIcon}
+         alt="search"
+         onClick={() => {}}
+        />
+      </div>
 
     </Router>
   )
