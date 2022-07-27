@@ -32,7 +32,7 @@ function App() {
 
       <Routes>
         <Route exact path="/" element={<Home/>}></Route>
-        <Route exact path="/CATALOGUE" element={<Catalogue/>}></Route>
+        <Route exact path="/catalogue" element={<Catalogue/>}></Route>
       </Routes>
 
       <div className="app">
@@ -51,6 +51,13 @@ function App() {
         />
       </div>
 
+      <div>
+       <BooksCard bookName="" bookId="" bookAuthor="" bookUrl="" />
+      </div>
+
+      <div>
+        <CocktailsCard idDrink="" strDrink="" strDrinkThumb="" />
+      </div>
     </Router>
   )
      

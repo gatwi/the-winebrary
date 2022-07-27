@@ -1,24 +1,24 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-function BooksCard(){
+function BooksCard({bookId, bookName, bookAuthor, bookUrl}){
     const [selectedCategory, setSelectedCategory] = useState("All");
-    const [items, setItems] = useState([]);
+    const [books, setBooks] = useState([]);
 
     useEffect(() => {
         fetch("http://localhost:3000/books")
         .then((r) => r.json())
-        .then((items) => console.log(items));
+        .then((books) => console.log(books));
     }, []);
 
     
     return(
-        <div className="books">
-            <img src="..." className="card-img-top" alt="..."/>
+        <div className="card" style={{width: 18 + 'rem'}}>
+            <img src={bookUrl} className="card-img-top" alt={bookAuthor}/>
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">{bookName}</h5>
               <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <Link href="#" className="btn btn-primary">Go somewhere</Link>
+              <Link to={`/book/${bookId}`} className="btn btn-primary">Grab a book</Link>
             </div>
         </div>
     )

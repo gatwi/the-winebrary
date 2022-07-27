@@ -4,121 +4,120 @@
         "id": 1,
         "Author": "Markus Zukas",
         "Title": "The Book Thief",
-        "Publisher": "www.penguin.co.uk"
+        "Url": "https://images-na.ssl-images-amazon.com/images/I/91pZEozf9qL.jpg"
       },
       {
         "id": 2,
         "Author": "Min Jin Lee",
         "Title": "Pachinko",
-        "Publisher": "www.headofzeus.com"
+        "Url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuoQUc9ovoySbNxK1u-KEfkZTZ3t9yjJIFP39Qe6XVonZdLW1t"
       },
       {
         "id": 3,
         "Author": "Othuke Ominiabos",
         "Title": "Odufa",
-        "Publisher": "www.masobebooks.com"
+        "Url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1600891668l/55437243._SY475_.jpg"
       },
       {
         "id": 4,
         "Author": "Trevor Noah",
         "Title": "Born A Crime",
-        "Publisher": "www.johnmurray.co.uk"
-        "Thumbnail": "C:\Users\user\Documents\SD59-63BFIP2Rm\the-winebrary\src\images\download (1).jpg"
+        "Url": "https://images.penguinrandomhouse.com/cover/9780399588198"
       },
       {
         "id": 5,
         "Author": "Hanya Yanagihara",
         "Title": "A Little Life",
-        "Publisher": "www.picador.com"
+        "Url": "https://images.gr-assets.com/books/1434711281l/25720072.jpg"
       },
       {
         "id": 6,
         "Author": "Elif Shafak",
         "Title": "Three Daughters of Eve",
-        "Publisher": "www.bloomsbury.com"
+        "Url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1508262311l/36429751._SY475_.jpg"
       },
       {
         "id": 7,
         "Author": "Lola Shoneyin",
         "Title": "The Secret Lives of Baba Segi's Wives",
-        "Publisher": "www.bloomsbury.com"
+        "Url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1308717065l/9402137.jpg"
       },
       {
         "id": 8,
         "Author": "Aldous Huxley",
         "Title": "Brave New World",
-        "Publisher": "www.perennialclassics.com"
+        "Url": "www.perennialclassics.com"
       },
       {
         "id": 9,
         "Author": "RuthAnne Lum McCunn",
         "Title": "Thousand Pieces of Gold",
-        "Publisher": "ww.beacon.com"
+        "Url": "ww.beacon.com"
       },
       {
         "id": 10,
         "Author": "Chimamanda Ngozi Adichie",
         "Title": "We Should All Be Feminists",
-        "Publisher": "4estate.co.uk"
+        "Url": "4estate.co.uk"
       },
       {
         "id": 11,
         "Author": "Chinua Achebe",
         "Title": "Africa's Tarnished Name",
-        "Publisher": "www.penguinclassics.com"
+        "Url": "www.penguinclassics.com"
       },
       {
         "id": 12,
         "Author": "Arthur Conan Doyle",
         "Title": "The Case-Book of Sherlock Holmes",
-        "Publisher": "www.collinsclassics.com"
+        "Url": "www.collinsclassics.com"
       },
       {
         "id": 13,
         "Author": "Yaa Gyasi",
         "Title": "Homegoing",
-        "Publisher": "www.penguinvikings.com"
+        "Url": "www.penguinvikings.com"
       },
       {
         "id": 14,
         "Author": "Richard Powers",
         "Title": "The Overstory",
-        "Publisher": "www.penguin.co.uk"
+        "Url": "www.penguin.co.uk"
       },
       {"id": 15,
       "Author": "Michelle Obama",
       "Title": "Becoming",
-      "Publisher": "www.penguinvikings.com"
+      "Url": "www.penguinvikings.com"
       },
       {
         "id": 16,
         "Author": "Paulo Coelho",
         "Title": "Adultery",
-        "Publisher": "www.randomhouse.co.in"
+        "Url": "www.randomhouse.co.in"
       },
       {
         "id": 17,
         "Author": "Zukiswa Warner",
         "Title": "London, Capetown Joburg",
-        "Publisher": "www.kwela.com"
+        "Url": "www.kwela.com"
       },
       {
         "id": 18,
         "Author": "Chinelo Okparanta",
         "Title": "Under The Udala Tree",
-        "Publisher": "www.grantabooks.com"
+        "Url": "www.grantabooks.com"
       },
       {
         "id": 19,
         "Author": "Elechi Amadi",
         "Title": "The Concubine",
-        "Publisher": "www.eastafricanpublishers.com"
+        "Url": "www.eastafricanUrls.com"
       },
       {
         "id": 20,
         "Author": "Mufasa The Poet",
         "Title": "Raising A Sun",
-        "Publisher": "www.kwanitrust.com"
+        "Url": "www.kwanitrust.com"
       }
     ]
   }
