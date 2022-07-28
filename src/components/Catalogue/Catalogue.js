@@ -1,6 +1,7 @@
 import React from "react";
 import BooksCard from "./BooksCard";
 import CocktailsCard from "./CocktailsCard";
+import { Link } from "react-router-dom";
 
 function Catalogue(){
     return(
@@ -12,6 +13,7 @@ function Catalogue(){
 
                 <div className="container-fluid">
                  <CocktailsCard idDrink="" strDrink="" strDrinkThumb="" />
+                 <Link to="/drinks" className="btn btn-primary">I'll drink to that</Link>
                 </div>
             </div>
         </div>
