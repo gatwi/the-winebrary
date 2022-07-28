@@ -12,8 +12,8 @@ import Search from "../Search/Search";
                     <li className="nav-item">
                      <Link className="nav-link" to="/">HOME</Link>
                     </li>
-                    <li className="nav-item dropdown">
-                        <Link className="nav-link dropdown-toggle" to="/CATALOGUE">CATALOGUE</Link>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/CATALOGUE">CATALOGUE</Link>
                         <div className="d-flex">
                             <div className="search">
                                 <input

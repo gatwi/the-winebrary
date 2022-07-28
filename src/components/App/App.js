@@ -28,22 +28,14 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home/>}></Route>
         <Route exact path="/catalogue" element={<Catalogue/>}></Route>
+        <Route exact path="/books" element={<BooksCard/>}></Route>
+        <Route exact path="/drinks" element={<CocktailsCard/>}></Route>
       </Routes>
 
-      <div className="app">
-        <h1>The Winebrary</h1>
-      </div>
+      
       
 
-      <div className="card-grid">
-        <div className="container-fluid">
-         <BooksCard bookTitle="The Book Thief" bookId="1" bookAuthor="Markus Zukas" bookUrl="https://images-na.ssl-images-amazon.com/images/I/91pZEozf9qL.jpg" />
-        </div>
-
-        <div className="container-fluid">
-         <CocktailsCard idDrink="14272" strDrink="Addison Special" strDrinkThumb="https:\/\/www.thecocktaildb.com\/images\/media\/drink\/4vo5651493068493.jpg" />
-        </div>
-      </div>
+      
     </Router>
   )
      

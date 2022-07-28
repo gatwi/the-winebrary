@@ -4,7 +4,9 @@ import React from "react";
  function Home(){
     return(
         <div>
-            Home
+            <div className="app">
+             <h1>The Winebrary</h1>
+            </div>
         </div>
     )
 }

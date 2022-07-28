@@ -17,7 +17,7 @@ function BooksCard({bookId, bookTitle, bookAuthor, bookUrl}){
             <div className="card-body">
               <h5 className="card-title">{bookTitle}</h5>
               <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <Link to={`/book/${bookId}`} className="btn btn-primary">Grab a book</Link>
+              <Link to={`/books/${bookId}`} className="btn btn-primary">Grab a book</Link>
             </div>
         </div>
     )
