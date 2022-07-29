@@ -1,23 +1,16 @@
 import React, { useState, useEffect } from "react";
-import CocktailsCard from "../Catalogue/CocktailsCard";
+import CocktailsCard from "../CocktailsCard";
 import Navbar from "../NavBar/Navbar";
 import Home from "../Home/Home";
 import Catalogue from "../Catalogue/Catalogue";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import "./../../App.css";
-import BooksCard from "../Catalogue/BooksCard";
+import BooksCard from "../BooksCard";
 
 
 
 function App() {
   
-  
-
-  // useEffect (() => {
-  //   fetch("http://localhost:3000/books")
-  //   .then(response => response.json())
-  //   .then(response => console.log(response))
-  // }, []);
 
 
   return (
@@ -34,8 +27,7 @@ function App() {
       </Routes>
 
       
-      
-
+    
       
     </Router>
   )

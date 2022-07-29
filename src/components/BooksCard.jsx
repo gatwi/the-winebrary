@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 
-function BooksCard({bookId, bookTitle, bookAuthor, bookUrl}){
+function BooksCard(){
     const [books, setBooks] = useState([]);
 
     useEffect(() => {
