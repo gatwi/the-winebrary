@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import StarRating from "./StarRating";
 
 
 function BooksCard(){
@@ -26,14 +27,8 @@ function BooksCard(){
                 {booksList}
             </ul>
         </div>
-    ) 
-
-}
-
+        
+    );
+};
 
 export default BooksCard;
-
-
-
-
-

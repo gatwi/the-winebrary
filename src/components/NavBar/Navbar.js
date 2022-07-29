@@ -5,6 +5,7 @@ import Search from "../Search/Search";
 
  function Navbar(){
     const [searchTerm, setSearchTerm] = useState("");
+    
     return(
         <nav className="navbar bg-light">
             <div className="container">
