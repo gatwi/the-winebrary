@@ -1,27 +1,56 @@
 import React from "react";
 import "./../../App.css";
 import { useState } from 'react';
-import { Link } from "react-router-dom";
+
 
 function SignUp() {
     const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [bio, setBio] = useState("");
+    const [gender, setGender] = useState("");
+    const [region, setRegion] = useState("");
+
+
 
     const onChangeHandler = (e) => {
-        console.log(e.target.value);
-        setEmail(e.target.value);
+        const val = e.target.value;
+        switch (e.target.name) {
+            case "email":
+                setEmail(val);
+                break;
+            case "password":
+                setPassword(val);
+                break;
+            case "bio":
+                setBio(val);
+                break;
+            case "gender":
+                setGender(val);
+                break;
+            case "region":
+                setRegion(val)
+                break;
+            default:
+                alert("Error");
+        }
     };
 
-    <div className="container">
-        <Link to="/register" className="btn btn-primary">Sign Up!</Link>
+    const submitHandler = () => {
+        const userObj = {email, password, bio, gender, region};
+        alert(JSON.stringify(userObj));
+    }
+
+    return (
+        <div className="container">
         <div className="row justify-content-center pt-5">
             <div className="col-md-5">
                 <div className="card-shadow-lg p-3 mb-5 bg-white rounded">
                     <h3 className="text-center">Register with Us!</h3>
                     <div className="card-body">
                         <div className="form-group">
-                            <lable htmlFor="email" className="form-label pt-2">
+                            <label htmlFor="email" className="form-label pt-2">
                                 Email Address
-                            </lable>
+                            </label>
                             <input
                                 autocomplete="off"
                                 type="email"
@@ -39,6 +68,9 @@ function SignUp() {
                             </label>
                             <input
                                 type="password"
+                                name="password"
+                                value={password}
+                                onChange={onChangeHandler}
                                 className="form-control"
                                 id="password"
                                 placeholder="...."
@@ -54,6 +86,9 @@ function SignUp() {
                             <textarea
                                 className="form-control"
                                 id="exampleFormControlTextarea1"
+                                name="bio"
+                                value={bio}
+                                onChange={onChangeHandler}
                                 rows="3"
                                 placeholder="About me..."
                             />
@@ -67,6 +102,7 @@ function SignUp() {
                                     id="female"
                                     value="female"
                                     name="gender"
+                                    onChange={onChangeHandler}
                                 />
                                 <label className="form-check-label pointer" htmlFor="female">
                                     Female
@@ -74,7 +110,7 @@ function SignUp() {
                             </div>
                         </div>
                         <div className="form-group">
-                            <label className="form-label">Gender</label>
+                            <label className="form-label"/>
                             <div className="form-check">
                                 <input
                                     className="form-check-input"
@@ -82,6 +118,7 @@ function SignUp() {
                                     id="male"
                                     value="male"
                                     name="gender"
+                                    onChange={onChangeHandler}
                                 />
                                 <label className="form-check-label pointer" htmlFor="male">
                                     Male
@@ -89,7 +126,7 @@ function SignUp() {
                             </div>
                         </div>
                         <div className="form-group">
-                            <label className="form-label">Gender</label>
+                            <label className="form-label"/>
                             <div className="form-check">
                                 <input
                                     className="form-check-input"
@@ -97,15 +134,22 @@ function SignUp() {
                                     id="non-binary"
                                     value="non-binary"
                                     name="gender"
+                                    onChange={onChangeHandler}
                                 />
                                 <label className="form-check-label pointer" htmlFor="non-binary">
                                     Non-binary
                                 </label>
                             </div>
                         </div>
+
                         <div className="form-group">
                             <label htmlFor="region">Region</label>
-                            <select className="form-control" id="region">
+                            <select 
+                                className="form-control" 
+                                id="region"
+                                name="region"
+                                onChange={onChangeHandler}
+                            >
                                 <option value="">Select Your Region</option>
                                 <option value="nairobi">Nairobi</option>
                                 <option value="central">Central</option>
@@ -115,12 +159,21 @@ function SignUp() {
                                 <option value="coast">Coast</option>
                             </select>
                         </div>
-                        <button type="button" className="btn btn-success">Submit</button>
+                        <div className="form-group">
+                            <button 
+                                onClick={submitHandler}
+                                type="button" 
+                                className="btn btn-primary btn-block"
+                            >
+                                Submit
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    )
 }
 
 export default SignUp;

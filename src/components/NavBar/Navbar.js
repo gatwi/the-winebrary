@@ -15,7 +15,7 @@ import Search from "../Search/Search";
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/CATALOGUE">CATALOGUE</Link>
-                        <Link className="nav-link" to="/register">Sign Up</Link>
+                        <Link className="nav-link" to="/register">SIGN UP</Link>
                         <Link to="/cart"><i className=" bi bi-cart-check-fill"></i></Link>
                         <div className="d-flex">
                             <div className="search">

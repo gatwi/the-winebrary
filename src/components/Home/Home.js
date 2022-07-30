@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
     return(
         <div>
             <div className="App">
-             <h1>The Winebrary</h1>
+             <h1 className="text-center">The Winebrary</h1>
             </div>
             <div className="card-grid">
                 <div className="carousel slide" data-bs-ride="carousel">
