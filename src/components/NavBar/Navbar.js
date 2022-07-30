@@ -5,9 +5,9 @@ import Search from "../Search/Search";
 
  function Navbar(){
     const [searchTerm, setSearchTerm] = useState("");
-    
+
     return(
-        <nav className="navbar bg-light">
+        <nav className="nav-wrapper">
             <div className="container">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     <li className="nav-item">
@@ -15,6 +15,8 @@ import Search from "../Search/Search";
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/CATALOGUE">CATALOGUE</Link>
+                        {/* <Link className="nav-link" to="/cart">My Cart</Link> */}
+                        <Link to="/cart"><i className=" bi bi-cart-check-fill"></i></Link>
                         <div className="d-flex">
                             <div className="search">
                                 <input
