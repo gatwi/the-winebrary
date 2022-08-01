@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useContext } from "react";
-import { BookContext, BookProvider } from "../Context/bookContext";
+import { BookContext } from "../Context/bookContext";
 import StarRating from "./StarRating";
 
 
 function BooksCard({addToFavorites}){
     const [books, setBooks] = useState([]);
     const [isRead, setIsRead] = useState(false)
-    const [cartItems, setCartItems] = useState([])
+    
 
     const {cart, dispatchUserEvent}= useContext(BookContext)
     console.log(cart)

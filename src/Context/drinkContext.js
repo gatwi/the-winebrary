@@ -12,7 +12,7 @@ const DrinkProvider = ({children}) => {
                 setCart([...cart, payload]);
                 return;
             case "REMOVE_FROM_CART":
-                setCart(cart.filter(item => item.id !== payload.id));
+                setCart(cart.filter(item => item.idDrink !== payload.idDrink));
                 return;
         
             default:

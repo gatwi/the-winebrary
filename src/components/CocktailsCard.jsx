@@ -1,19 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { DrinkContext } from "../Context/drinkContext";
 import StarRating from "./StarRating";
 
 
-
-const cocktails_url = "http://localhost:3000/drinks"
 
 function CocktailsCard({addToFavorites}) {
     const [drinks, setDrinks] = useState([]);
     
 
+    const {cart, dispatchUserEvent}= useContext(DrinkContext)
+    console.log(cart)
+    
+
     useEffect(() => {
-        fetch(cocktails_url)
+        fetch("http://localhost:3000/drinks")
         .then((response) => response.json())
-        .then((data) => setDrinks(data))
+        .then((drinks) => {
+            setDrinks(drinks)
+        });
     }, []);
+
+    const addCartItem = (drink) => {
+        dispatchUserEvent("ADD_TO_CART", drink)
+    } 
 
     const drinksList = drinks.map((drink) => (
         <div className="col-11 col-md-6 col-lg-3 mx-0 mb-4" style={{width: 18 + 'rem'}}>
@@ -24,7 +33,7 @@ function CocktailsCard({addToFavorites}) {
                 <button className="btn btn-dark" onClick={() => addToFavorites(drink)}>
                     {drink.isFavorite ? "Unfavorite" : "♥ Favorite"}
                 </button>
-                <button className="btn btn-success">Add to Cart</button>
+                <button onClick={() => addCartItem(drink)} className="btn btn-primary">Add to Cart</button>
             </div>
         </div>
     ))

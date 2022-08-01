@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import SearchIcon from "./../../search.svg";
-import Search from "../Search/Search";
+
 
  function Navbar(){
     const [searchTerm, setSearchTerm] = useState("");

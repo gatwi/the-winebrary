@@ -1,11 +1,12 @@
 import React, { useContext, useState } from 'react'
 import { BookContext } from "../Context/bookContext";
+import { DrinkContext } from '../Context/drinkContext';
 import Counter from './Counter';
 import { Link } from "react-router-dom";
 
 
 export default function Cart() {
-    const {cart, addCartItem}= useContext(BookContext)
+    const {cart, addCartItem}= useContext(BookContext, DrinkContext)
     const [counter, setCounter] = useState(1)
 
     let totalAmount = 0
@@ -37,6 +38,7 @@ export default function Cart() {
             <div className="row">
                     <div className="col">
                         {item.Title}
+                        {item.strDrink}
                     </div>
                     <div className="col">
                        <Counter quantity={counter} changeQuantity={setCounter}/>
