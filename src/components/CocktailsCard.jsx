@@ -25,24 +25,26 @@ function CocktailsCard({addToFavorites}) {
     } 
 
     const drinksList = drinks.map((drink) => (
-        <div className="col-11 col-md-6 col-lg-3 mx-0 mb-4" style={{width: 18 + 'rem'}}>
-            <img src={drink.strDrinkThumb} className="card-img-top" alt={drink.strDrink}/>
-            <div className="card-body">
+        <div className="flex-fill">
+                <div className="w-100">
+                    <img src={drink.strDrinkThumb} className="" alt={drink.strDrink} style={{width: "300px"}}/>
+                </div>
                 <p className="card-text">{drink.strDrink}</p>
                 <StarRating />
                 <button className="btn btn-dark" onClick={() => addToFavorites(drink)}>
                     {drink.isFavorite ? "Unfavorite" : "♥ Favorite"}
                 </button>
-                <button onClick={() => addCartItem(drink)} className="btn btn-primary">Add to Cart</button>
+                <button onClick={() => addCartItem(drink)} className="btn btn-primary btn-block">Add to Cart</button>
             </div>
-        </div>
     ))
 
 
 
     return(
-        <div>
-            {drinksList}
+        <div className="container-fluid">
+            <div className="d-flex flex-wrap">
+                {drinksList}
+            </div>
         </div>
     )
 }
