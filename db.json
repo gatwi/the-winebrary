@@ -18,21 +18,21 @@
         "id": 3,
         "Author": "Othuke Ominiabos",
         "Title": "Odufa",
-        "Price": "$ 22",
+        "Price": "ksh 2200",
         "Url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1600891668l/55437243._SY475_.jpg"
       },
       {
         "id": 4,
         "Author": "Trevor Noah",
         "Title": "Born A Crime",
-        "Price": "$ 8",
+        "Price": "ksh 800",
         "Url": "https://images.penguinrandomhouse.com/cover/9780399588198"
       },
       {
         "id": 5,
         "Author": "Hanya Yanagihara",
         "Title": "A Little Life",
-        "Price": "$ 15",
+        "Price": "ksh 1500",
         "Url": "https://images.gr-assets.com/books/1434711281l/25720072.jpg"
       },
       {
@@ -128,41 +128,49 @@
     "drinks": [
       {
           "strDrink": "155 Belmont",
+          "Price": "ksh 500",
           "strDrinkThumb": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/yqvvqs1475667388.jpg",
           "idDrink": "15346"
       },
       {
           "strDrink": "57 Chevy with a White License Plate",
+          "Price": "ksh 800",
           "strDrinkThumb": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qyyvtu1468878544.jpg",
           "idDrink": "14029"
       },
       {
           "strDrink": "747 Drink",
+          "Price": "ksh 900",
           "strDrinkThumb": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/i9suxb1582474926.jpg",
           "idDrink": "178318"
       },
       {
           "strDrink": "9 1\/2 Weeks",
+          "Price": "ksh 500",
           "strDrinkThumb": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xvwusr1472669302.jpg",
           "idDrink": "16108"
       },
       {
           "strDrink": "A Gilligan's Island",
+          "Price": "ksh 500",
           "strDrinkThumb": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wysqut1461867176.jpg",
           "idDrink": "16943"
       },
       {
           "strDrink": "A True Amaretto Sour",
+          "Price": "ksh 900",
           "strDrinkThumb": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rptuxy1472669372.jpg",
           "idDrink": "17005"
       },
       {
           "strDrink": "A.D.M. (After Dinner Mint)",
+          "Price": "ksh 700",
           "strDrinkThumb": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ruxuvp1472669600.jpg",
           "idDrink": "14560"
       },
       {
           "strDrink": "A1",
+          "Price": "ksh 400",
           "strDrinkThumb": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/2x8thr1504816928.jpg",
           "idDrink": "17222"
       },

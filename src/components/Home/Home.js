@@ -7,7 +7,8 @@ import { Link } from "react-router-dom";
     return(
         <div>
             <div className="container">
-             <h1 className="text-center">The Winebrary</h1>
+                <h2>Welcome to The Winebrary</h2>
+                <p className="card-text">For the love of Books, Wine, and everything fine, The Winebrary aims to bring the best of these worlds through art! Our mission is to create a fun and enjoyable space for bookish people to socialize and be part of a community of book lovers bu curating cute merchandise and fun events where we can share books and thoughts on diverse topics.</p>
             </div>
             <div className="container">
                 <div className="card-grid">
@@ -41,12 +42,6 @@ import { Link } from "react-router-dom";
                 </div>
             </div>
 
-            <div className="container">
-                <h2>Welcome to The Winebrary</h2>
-                <p className="card-text">For the love of Books, Wine, and everything fine, The Winebrary aims to bring the best of these worlds through art! Our mission is to create a fun and enjoyable space for bookish people to socialize and be part of a community of book lovers bu curating cute merchandise and fun events where we can share books and thoughts on diverse topics.</p>
-            </div>
-
-        
         </div>
     )
 }
