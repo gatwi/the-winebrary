@@ -1,22 +1,34 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { BookContext, BookProvider } from "../Context/bookContext";
 import StarRating from "./StarRating";
 
 
 function BooksCard({addToFavorites}){
     const [books, setBooks] = useState([]);
     const [isRead, setIsRead] = useState(false)
+    const [cartItems, setCartItems] = useState([])
+
+    const {cart, dispatchUserEvent}= useContext(BookContext)
+    console.log(cart)
 
     useEffect(() => {
         fetch("http://localhost:3000/books")
         .then((r) => r.json())
-        .then((books) => setBooks(books));
-    }, [books]);
+        .then((books) => {
+            setBooks(books)
+        });
+    }, []);
 
+    const addCartItem = (book) => {
+        dispatchUserEvent("ADD_TO_CART", book)
+    } 
+
+    
     const booksList = books.map((book) => (
         <div className="card-grid" style={{width: 40 + 'rem'}}>
             <img src={book.Url} className="card-img-top" alt={book.Title}/>
             <div className="card-body">
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p className="card-text">{book.Title} by {book.Author}</p>
                 <StarRating />
                 <button className="btn btn-success" onClick={() => setIsRead(!isRead)} >
                     Mark as {isRead ? "unread" : "read" }
@@ -24,7 +36,7 @@ function BooksCard({addToFavorites}){
                 <button className="btn btn-dark" onClick={() => addToFavorites(book)}>
                     {book.isFavorite ? "Unfavorite" : "♥ Favorite"}
                 </button>
-                <button className="btn btn-primary btn-block">Add to Cart</button>
+                <button onClick={() => addCartItem(book)} className="btn btn-primary btn-block">Add to Cart</button>
             </div>
         </div>
     ))

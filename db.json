@@ -4,30 +4,35 @@
         "id": 1,
         "Author": "Markus Zukas",
         "Title": "The Book Thief",
+        "Price": "ksh 1200",
         "Url": "https://images-na.ssl-images-amazon.com/images/I/91pZEozf9qL.jpg"
       },
       {
         "id": 2,
         "Author": "Min Jin Lee",
         "Title": "Pachinko",
+        "Price": "ksh 1300",
         "Url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuoQUc9ovoySbNxK1u-KEfkZTZ3t9yjJIFP39Qe6XVonZdLW1t"
       },
       {
         "id": 3,
         "Author": "Othuke Ominiabos",
         "Title": "Odufa",
+        "Price": "$ 22",
         "Url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1600891668l/55437243._SY475_.jpg"
       },
       {
         "id": 4,
         "Author": "Trevor Noah",
         "Title": "Born A Crime",
+        "Price": "$ 8",
         "Url": "https://images.penguinrandomhouse.com/cover/9780399588198"
       },
       {
         "id": 5,
         "Author": "Hanya Yanagihara",
         "Title": "A Little Life",
+        "Price": "$ 15",
         "Url": "https://images.gr-assets.com/books/1434711281l/25720072.jpg"
       },
       {
@@ -64,42 +69,42 @@
         "id": 11,
         "Author": "Chinua Achebe",
         "Title": "Africa's Tarnished Name",
-        "Url": "www.penguinclassics.com"
+        "Url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1544080756l/36436064._SX318_.jpg"
       },
       {
         "id": 12,
         "Author": "Arthur Conan Doyle",
         "Title": "The Case-Book of Sherlock Holmes",
-        "Url": "www.collinsclassics.com"
+        "Url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1316863480l/162823.jpg"
       },
       {
         "id": 13,
         "Author": "Yaa Gyasi",
         "Title": "Homegoing",
-        "Url": "www.penguinvikings.com"
+        "Url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1448108591l/27071490.jpg"
       },
       {
         "id": 14,
         "Author": "Richard Powers",
         "Title": "The Overstory",
-        "Url": "www.penguin.co.uk"
+        "Url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562786502i/40180098._UY900_SS900_.jpg"
       },
       {"id": 15,
       "Author": "Michelle Obama",
       "Title": "Becoming",
-      "Url": "www.penguinvikings.com"
+      "Url": "https://prestigebookshop.com/wp-content/uploads/2019/02/book-image-19365.jpg"
       },
       {
         "id": 16,
         "Author": "Paulo Coelho",
         "Title": "Adultery",
-        "Url": "www.randomhouse.co.in"
+        "Url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1406247571l/20819682.jpg"
       },
       {
         "id": 17,
         "Author": "Zukiswa Warner",
         "Title": "London, Capetown Joburg",
-        "Url": "www.kwela.com"
+        "Url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1398686145l/20951195.jpg"
       },
       {
         "id": 18,
