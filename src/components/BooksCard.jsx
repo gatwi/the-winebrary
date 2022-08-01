@@ -25,9 +25,10 @@ function BooksCard({addToFavorites}){
 
     
     const booksList = books.map((book) => (
-        <div className="card-grid" style={{width: 40 + 'rem'}}>
-            <img src={book.Url} className="card-img-top" alt={book.Title}/>
-            <div className="card-body">
+            <div className="flex-fill">
+                <div className="w-100">
+                    <img src={book.Url} className="" alt={book.Title} style={{width: "300px"}}/>
+                </div>
                 <p className="card-text">{book.Title} by {book.Author}</p>
                 <StarRating />
                 <button className="btn btn-success" onClick={() => setIsRead(!isRead)} >
@@ -38,17 +39,16 @@ function BooksCard({addToFavorites}){
                 </button>
                 <button onClick={() => addCartItem(book)} className="btn btn-primary btn-block">Add to Cart</button>
             </div>
-        </div>
+            
     ))
 
     
     return(
-        <div>
-            <ul>
+        <div className="container-fluid">
+            <div className="d-flex flex-wrap">
                 {booksList}
-            </ul>
+            </div>
         </div>
-        
     );
 };
 

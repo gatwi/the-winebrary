@@ -4,6 +4,7 @@ const BookContext = createContext()
 
 const BookProvider = ({children}) => {
     const [cart, setCart] = useState([])
+ 
 
     // cart stuff!!
     // we want to add items to cart
