@@ -12,7 +12,7 @@ function BooksCard({addToFavorites}){
     console.log(cart)
 
     useEffect(() => {
-        fetch("https://tourmaline-pretty-crib.glitch.me/drinks")
+        fetch("https://tourmaline-pretty-crib.glitch.me/books")
         .then((r) => r.json())
         .then((books) => {
             setBooks(books)
