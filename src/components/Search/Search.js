@@ -1,16 +1,20 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Search = () => {
     const [search, setSearch] = useState("")
     const [books, setBooks] = useState([])
     const [drinks, setDrinks] = useState([])
 
+    
+
 
     useEffect(() => {
         fetch('http://localhost:3000/books')
           .then(res => res.json())
-          .then(book => setBooks(book))
-      }, [])                                         
+          .then(book => console.log(book))
+      }, [])  
+
 
   const booksList = books.filter((val)=>{
     if(search === ""){
@@ -23,14 +27,22 @@ const Search = () => {
     
   ))
   return (
-    <div>
-      {booksList}
-    </div>
+      <div className="">
+        <input
+          type="text"
+          placeholder={"Search for documents"}
+          onChange={(e)=>setSearch(e.target.value)}
+        />
+          <h1>Documents</h1>
+          {docsList}
+      </div>
+    
+    
+    
   );
 };
 
 export default Search;
-
 
 
 
