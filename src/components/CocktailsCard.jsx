@@ -13,7 +13,7 @@ function CocktailsCard({addToFavorites}) {
     
 
     useEffect(() => {
-        fetch("http://localhost:3000/drinks")
+        fetch("https://tourmaline-pretty-crib.glitch.me/books")
         .then((response) => response.json())
         .then((drinks) => {
             setDrinks(drinks)
