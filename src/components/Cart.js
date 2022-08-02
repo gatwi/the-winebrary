@@ -6,25 +6,20 @@ import { Link } from "react-router-dom";
 
 
 export default function Cart() {
-    const {cart, addCartItem}= useContext(DrinkContext)
-    const {shop, setShopItems}= useContext(BookContext)
+    const {cart, addCartItem}= useContext(BookContext)
     const [counter, setCounter] = useState(1)
 
-    var totalAmount = 0
+    let totalAmount = 0
 
-    for(var i=0; i<cart.length;i++) {
+    for(let i=0; i<cart.length;i++) {
         const itemTotal = parseInt(cart[i].Price.match(/\d+/gi).join(''))
         totalAmount += itemTotal
 
     }
 
-    for(var i=0; i<shop.length;i++) {
-        const itemTotal = parseInt(shop[i].Price.match(/\d+/gi).join(''))
-        totalAmount += itemTotal
-
-    }
+    
     console.log(cart)
-    console.log(shop)
+    
 
   return (
     <div className="container">
