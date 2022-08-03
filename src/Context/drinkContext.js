@@ -1,5 +1,7 @@
 import React, { createContext, useState } from 'react';
 
+// stretch test
+// create a function in the cart section for drinkContext
 
 const DrinkContext = createContext()
 

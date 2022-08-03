@@ -13,11 +13,12 @@ import { Link } from "react-router-dom";
                 <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul className="navbar-nav navbar-right me-auto mb-2 mb-lg-0">
                         <Link className="nav-link" to="/">HOME</Link>
                         <Link className="nav-link" to="/CATALOGUE">CATALOGUE</Link>
                         <Link className="nav-link" to="/register">SIGN UP</Link>
-                        <Link to="/shopping"><i className=" bi bi-cart-check-fill"></i></Link>
+                        <Link className="nav-link" to="/search">SEARCH</Link>
+                        <Link to="/shopping" className="nav-link">CART</Link>
                     </ul>
                 </div>
             </div>
